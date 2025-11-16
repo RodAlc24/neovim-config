@@ -1,8 +1,19 @@
 return {
 	{
+		"williamboman/mason.nvim",
+		opts = {
+			ui = {
+				icons = {
+					package_installed = "✓",
+					package_pending = "➜",
+					package_uninstalled = "✗",
+				},
+			},
+		},
+	},
+	{
 		"williamboman/mason-lspconfig.nvim",
 		opts = {
-			-- list of servers for mason to install
 			ensure_installed = {
 				"clangd",
 				"lua_ls",
@@ -12,19 +23,8 @@ return {
 			},
 		},
 		dependencies = {
-			{
-				"williamboman/mason.nvim",
-				opts = {
-					ui = {
-						icons = {
-							package_installed = "✓",
-							package_pending = "➜",
-							package_uninstalled = "✗",
-						},
-					},
-				},
-			},
 			"neovim/nvim-lspconfig",
+			"williamboman/mason.nvim",
 		},
 	},
 	{
@@ -42,6 +42,28 @@ return {
 				"pgformatter",
 			},
 		},
+		dependencies = {
+			"williamboman/mason.nvim",
+		},
+	},
+	{
+		"jay-babu/mason-nvim-dap.nvim",
+		config = function()
+			local mason_dap = require("mason-nvim-dap")
+
+			mason_dap.setup({
+				ensure_installed = {
+					"cppdbg",
+					"python",
+				},
+				automatic_installation = false,
+				handlers = {
+					function(config)
+						mason_dap.default_setup(config)
+					end,
+				},
+			})
+		end,
 		dependencies = {
 			"williamboman/mason.nvim",
 		},
