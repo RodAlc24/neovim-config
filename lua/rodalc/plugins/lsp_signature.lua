@@ -4,7 +4,7 @@ return {
 	opts = {
 		bind = true,
 		handler_opts = {
-			border = "rounded",
+			border = "single",
 		},
 		hint_enable = false,
 	},

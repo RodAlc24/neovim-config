@@ -55,12 +55,9 @@ vim.api.nvim_create_autocmd("LspAttach", {
 			vim.diagnostic.open_float,
 			{ buffer = ev.buf, silent = true, desc = "LSP: Show line diagnostics" }
 		)
-		vim.keymap.set(
-			"n",
-			"<leader>k",
-			vim.lsp.buf.hover,
-			{ buffer = ev.buf, silent = true, desc = "LSP: Hover documentation" }
-		)
+		vim.keymap.set("n", "<leader>k", function()
+			vim.lsp.buf.hover({ border = "single" })
+		end, { buffer = ev.buf, silent = true, desc = "LSP: Hover documentation" })
 		vim.keymap.set(
 			"n",
 			"<leader>rs",

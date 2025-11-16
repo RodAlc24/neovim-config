@@ -43,7 +43,6 @@ opt.sessionoptions:remove("blank") -- Close an empty window
 
 -- appearance
 opt.background = "dark" -- color schemes that can be light or dark will be made dark
-opt.winborder = "rounded" -- rounded windows
 
 -- backspace
 opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position
