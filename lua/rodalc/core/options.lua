@@ -37,12 +37,13 @@ opt.spelllang = "es,en" -- Spelling for English and Spanish
 opt.spell = false -- Deactivate spell checker
 
 -- Other
-vim.opt.mouse = "a" -- Enable mouse support
-vim.opt.shortmess:append("c") -- Don't give ins-completion-menu messages
-vim.opt.sessionoptions:remove("blank") -- Close an empty window
+opt.mouse = "a" -- Enable mouse support
+opt.shortmess:append("c") -- Don't give ins-completion-menu messages
+opt.sessionoptions:remove("blank") -- Close an empty window
 
 -- appearance
 opt.background = "dark" -- color schemes that can be light or dark will be made dark
+opt.winborder = "rounded" -- rounded windows
 
 -- backspace
 opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position

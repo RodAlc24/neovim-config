@@ -70,7 +70,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
 	end,
 })
 
-vim.o.winborder = "rounded"
 vim.diagnostic.config({
 	virtual_text = false,
 	float = {
