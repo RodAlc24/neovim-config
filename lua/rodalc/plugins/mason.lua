@@ -36,7 +36,6 @@ return {
 				"stylua",
 				"isort",
 				"black",
-				"pylint",
 				"latexindent",
 				"typstyle",
 				"pgformatter",
