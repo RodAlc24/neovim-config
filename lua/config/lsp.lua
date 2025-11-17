@@ -70,7 +70,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 vim.diagnostic.config({
 	virtual_text = false,
 	float = {
-		border = "rounded",
+		border = "single",
 		source = "if_many",
 		header = "",
 		prefix = "",
