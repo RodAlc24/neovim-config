@@ -15,33 +15,11 @@ return {
 		"williamboman/mason-lspconfig.nvim",
 		opts = {
 			ensure_installed = {
-				"clangd",
 				"lua_ls",
-				"pyright",
-				"texlab",
-				"tinymist",
 			},
 		},
 		dependencies = {
 			"neovim/nvim-lspconfig",
-			"williamboman/mason.nvim",
-		},
-	},
-	{
-		"WhoIsSethDaniel/mason-tool-installer.nvim",
-		opts = {
-			ensure_installed = {
-				"clang-format",
-				"prettier",
-				"stylua",
-				"isort",
-				"black",
-				"latexindent",
-				"typstyle",
-				"pgformatter",
-			},
-		},
-		dependencies = {
 			"williamboman/mason.nvim",
 		},
 	},
@@ -51,10 +29,7 @@ return {
 			local mason_dap = require("mason-nvim-dap")
 
 			mason_dap.setup({
-				ensure_installed = {
-					"cppdbg",
-					"python",
-				},
+				ensure_installed = {},
 				automatic_installation = false,
 				handlers = {
 					function(config)
