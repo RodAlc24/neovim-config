@@ -1,3 +1,4 @@
-require("rodalc.core")
-require("rodalc.lazy")
-require("rodalc.lsp")
+require("config.keymaps")
+require("config.options")
+require("config.lazy")
+require("config.lsp")
