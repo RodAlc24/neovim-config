@@ -36,6 +36,11 @@ return {
 					sync_with_nvim_tree = true,
 				},
 			},
+			pickers = {
+				spell_suggest = {
+					initial_mode = "normal",
+				},
+			},
 		})
 
 		telescope.load_extension("fzf")
@@ -48,5 +53,6 @@ return {
 		vim.keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
 		vim.keymap.set("n", "<leader>fp", "<cmd>Telescope project<cr>", { desc = "Find projects" })
 		vim.keymap.set("n", "<leader>fb", "<cmd>Telescope file_browser<cr>", { desc = "Telescope file browser" })
+		vim.keymap.set("n", "z=", "<cmd>Telescope spell_suggest<cr>", { desc = "Spell suggest" })
 	end,
 }
