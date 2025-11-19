@@ -7,31 +7,12 @@ return {
 		local treesitter = require("nvim-treesitter.configs")
 
 		treesitter.setup({
-			highlight = {
-				enable = true,
-			},
+			modules = {},
+			sync_install = false,
+			ignore_install = {},
+			highlight = { enable = true },
 			indent = { enable = true },
-			ensure_installed = {
-				"c",
-				"cpp",
-				"python",
-				"java",
-				"kotlin",
-				"latex",
-				"typst",
-				"vimdoc",
-				"vim",
-				"json",
-				"html",
-				"css",
-				"markdown",
-				"markdown_inline",
-				"bash",
-				"lua",
-				"dockerfile",
-				"gitignore",
-				"query",
-			},
+			ensure_installed = {},
 			auto_install = true,
 			additional_vim_regex_highlighting = false,
 			incremental_selection = {
@@ -44,8 +25,5 @@ return {
 				},
 			},
 		})
-
-		-- use bash parser for zsh files
-		vim.treesitter.language.register("bash", "zsh")
 	end,
 }
