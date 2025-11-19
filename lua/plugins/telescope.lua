@@ -27,7 +27,7 @@ return {
 			extensions = {
 				project = {
 					base_dirs = {
-						"~/.config/nvim",
+						vim.fn.stdpath("config"),
 					},
 					hidden_files = true,
 					theme = "dropdown",

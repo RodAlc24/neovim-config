@@ -40,6 +40,7 @@ return {
 		end,
 		dependencies = {
 			"williamboman/mason.nvim",
+			"mfussenegger/nvim-dap",
 		},
 	},
 }
