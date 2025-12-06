@@ -7,7 +7,6 @@ vim.g.maplocalleader = " "
 
 local keymap = vim.keymap.set
 
-keymap("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 keymap("t", "<ESC>", "<C-\\><C-n>", { desc = "Exit terminal" })
 
 -- Move lines around with ALT + {j,k}

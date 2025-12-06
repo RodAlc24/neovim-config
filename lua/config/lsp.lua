@@ -27,7 +27,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		)
 		vim.keymap.set(
 			"n",
-			"gT",
+			"<leader>gT",
 			"<cmd>Telescope lsp_type_definitions<CR>",
 			{ buffer = ev.buf, silent = true, desc = "LSP: Go to type definition" }
 		)
@@ -84,6 +84,6 @@ vim.diagnostic.config({
 		},
 	},
 	underline = true,
-	update_in_insert = false,
+	update_in_insert = true,
 	severity_sort = true,
 })
