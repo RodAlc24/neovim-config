@@ -68,7 +68,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 })
 
 vim.diagnostic.config({
-	virtual_text = false,
+	virtual_text = true,
 	float = {
 		border = "single",
 		source = "if_many",
@@ -84,6 +84,6 @@ vim.diagnostic.config({
 		},
 	},
 	underline = true,
-	update_in_insert = true,
+	update_in_insert = false,
 	severity_sort = true,
 })
