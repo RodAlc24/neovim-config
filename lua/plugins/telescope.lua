@@ -55,6 +55,9 @@ return {
 		vim.keymap.set("n", "<leader>tp", "<cmd>Telescope project<cr>", { desc = "Find projects" })
 		vim.keymap.set("n", "<leader>tb", "<cmd>Telescope file_browser<cr>", { desc = "Telescope file browser" })
 
+		vim.keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>", { desc = "Git status (Telescope)" })
+		vim.keymap.set("n", "<leader>gf", "<cmd>Telescope git_files<cr>", { desc = "Git files (Telescope)" })
+
 		vim.keymap.set("n", "<leader>td", "<cmd>TodoTelescope<cr>", { desc = "Todo Telescope picker" })
 
 		vim.keymap.set("n", "<leader>s=", "<cmd>Telescope spell_suggest<cr>", { desc = "Spell suggest" })

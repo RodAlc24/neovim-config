@@ -41,5 +41,8 @@ return {
 			},
 		})
 		vim.api.nvim_set_hl(0, "GitSignsCurrentLineBlame", { fg = "#ff8800" })
+
+		vim.keymap.set("n", "<leader>gb", "<cmd>Gitsigns blame<cr>", { desc = "Git blame" })
+		vim.keymap.set("n", "<leader>gl", "<cmd>Gitsigns blame_line<cr>", { desc = "Git blame line" })
 	end,
 }

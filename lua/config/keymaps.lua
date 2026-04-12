@@ -57,3 +57,4 @@ keymap("n", "<leader>sp", "]s", { desc = "Spell previous" })
 -- NOTE: The following prefixes are used by plugins or similar commands (not exhaustive list)
 -- <leader>t -> Telescope
 -- <leader>s -> Spell
+-- <leader>g -> Git
