@@ -45,8 +45,15 @@ keymap("n", "<S-Tab>", "<<", { desc = "Indent left" })
 keymap("v", "<Tab>", ">gv", { desc = "Indent right" })
 keymap("v", "<S-Tab>", "<gv", { desc = "Indent left" })
 
--- Set a key map to call the toggle_spell_check function
-keymap("n", "<leader>ñ", ":set spell!<CR>", { desc = "Toggle spell checker" })
+-- Spell checker
+keymap("n", "<leader>st", "<cmd>set spell!<cr>", { desc = "Spell checker Toggle" })
+keymap("n", "<leader>ss", "<cmd>set spell<cr>", { desc = "Spell checker Start" })
+keymap("n", "<leader>sq", "<cmd>set nospell<cr>", { desc = "Spell checker stop" })
+keymap("n", "<leader>sg", "zg", { desc = "Spell good" })
+keymap("n", "<leader>sd", "zw", { desc = "Spell wrong" })
+keymap("n", "<leader>sn", "]s", { desc = "Spell next" })
+keymap("n", "<leader>sp", "]s", { desc = "Spell previous" })
 
 -- NOTE: The following prefixes are used by plugins or similar commands (not exhaustive list)
 -- <leader>t -> Telescope
+-- <leader>s -> Spell
