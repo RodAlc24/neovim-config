@@ -1,6 +1,6 @@
 return {
 	"lervag/vimtex",
-	lazy = false, -- not recommended to lazy load it
+	lazy = true, -- not recommended to lazy load it
 	init = function()
 		vim.g.vimtex_view_method = "zathura"
 		vim.g.tex_flavor = "latex"
