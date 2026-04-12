@@ -47,3 +47,6 @@ keymap("v", "<S-Tab>", "<gv", { desc = "Indent left" })
 
 -- Set a key map to call the toggle_spell_check function
 keymap("n", "<leader>ñ", ":set spell!<CR>", { desc = "Toggle spell checker" })
+
+-- NOTE: The following prefixes are used by plugins or similar commands (not exhaustive list)
+-- <leader>t -> Telescope

@@ -48,11 +48,15 @@ return {
 		telescope.load_extension("file_browser")
 		telescope.load_extension("ui-select")
 
-		vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Find files in cwd" })
-		vim.keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Find recent files" })
-		vim.keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
-		vim.keymap.set("n", "<leader>fp", "<cmd>Telescope project<cr>", { desc = "Find projects" })
-		vim.keymap.set("n", "<leader>fb", "<cmd>Telescope file_browser<cr>", { desc = "Telescope file browser" })
-		vim.keymap.set("n", "z=", "<cmd>Telescope spell_suggest<cr>", { desc = "Spell suggest" })
+		vim.keymap.set("n", "<leader>tt", "<cmd>Telescope<cr>", { desc = "Show all builtin pickers" })
+		vim.keymap.set("n", "<leader>tf", "<cmd>Telescope find_files<cr>", { desc = "Find files in cwd" })
+		vim.keymap.set("n", "<leader>tr", "<cmd>Telescope oldfiles<cr>", { desc = "Find recent files" })
+		vim.keymap.set("n", "<leader>tg", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
+		vim.keymap.set("n", "<leader>tp", "<cmd>Telescope project<cr>", { desc = "Find projects" })
+		vim.keymap.set("n", "<leader>tb", "<cmd>Telescope file_browser<cr>", { desc = "Telescope file browser" })
+
+		vim.keymap.set("n", "<leader>td", "<cmd>TodoTelescope<cr>", { desc = "Todo Telescope picker" })
+
+		vim.keymap.set("n", "<leader>s=", "<cmd>Telescope spell_suggest<cr>", { desc = "Spell suggest" })
 	end,
 }
