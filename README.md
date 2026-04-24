@@ -40,7 +40,7 @@ A modular [Neovim](https://github.com/neovim/neovim) setup focused on developer 
 | [`nvim-telescope/telescope.nvim`](https://github.com/nvim-telescope/telescope.nvim)             | Fuzzy finder                             |
 | [`stevearc/conform.nvim`](https://github.com/stevearc/conform.nvim)                             | Code formatting manager                  |
 | [`nvim-tree/nvim-tree.lua`](https://github.com/nvim-tree/nvim-tree.lua)                         | File explorer                            |
-| ['rcarriga/nvim-dap-ui'](https://github.com/rcarriga/nvim-dap-ui)                               | UI for DAP                               |
+| [`rcarriga/nvim-dap-ui`](https://github.com/rcarriga/nvim-dap-ui)                               | UI for DAP                               |
 | [`lewis6991/gitsigns.nvim`](https://github.com/lewis6991/gitsigns.nvim)                         | Git signs and status in the gutter       |
 | [`lukas-reineke/indent-blankline.nvim`](https://github.com/lukas-reineke/indent-blankline.nvim) | Indentation guides                       |
 | [`goolord/alpha-nvim`](https://github.com/goolord/alpha-nvim)                                   | Startup dashboard                        |
@@ -53,4 +53,4 @@ A modular [Neovim](https://github.com/neovim/neovim) setup focused on developer 
 | [`lervag/vimtex`](https://github.com/lervag/vimtex)                                             | LaTeX integration                        |
 | [`norcalli/nvim-colorizer.lua`](https://github.com/norcalli/nvim-colorizer.lua)                 | Display color codes with real colors     |
 | [`monaqa/dial.nvim`](https://github.com/monaqa/dial.nvim)                                       | Better increment/decrement operations    |
-| ['Eandrju/cellular-automaton.nvim']('https://github.com/Eandrju/cellular-automaton.nvim')       | Cellular automaton animations            |
+| [`Eandrju/cellular-automaton.nvim`](https://github.com/Eandrju/cellular-automaton.nvim)         | Cellular automaton animations            |
