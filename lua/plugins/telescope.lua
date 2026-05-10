@@ -8,6 +8,7 @@ return {
 		"nvim-tree/nvim-web-devicons",
 		"nvim-telescope/telescope-project.nvim",
 		"nvim-telescope/telescope-ui-select.nvim",
+		"nvim-telescope/telescope-frecency.nvim",
 	},
 	config = function()
 		local telescope = require("telescope")
@@ -47,10 +48,16 @@ return {
 		telescope.load_extension("project")
 		telescope.load_extension("file_browser")
 		telescope.load_extension("ui-select")
+		telescope.load_extension("frecency")
 
 		vim.keymap.set("n", "<leader>tt", "<cmd>Telescope<cr>", { desc = "Show all builtin pickers" })
 		vim.keymap.set("n", "<leader>tf", "<cmd>Telescope find_files<cr>", { desc = "Find files in cwd" })
-		vim.keymap.set("n", "<leader>tr", "<cmd>Telescope oldfiles<cr>", { desc = "Find recent files" })
+		vim.keymap.set(
+			"n",
+			"<leader>tr",
+			"<cmd>Telescope frecency workspace=CWD path_display={'shorten'} <cr>",
+			{ desc = "Find recent files" }
+		)
 		vim.keymap.set("n", "<leader>tg", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
 		vim.keymap.set("n", "<leader>tp", "<cmd>Telescope project<cr>", { desc = "Find projects" })
 		vim.keymap.set("n", "<leader>tb", "<cmd>Telescope file_browser<cr>", { desc = "Telescope file browser" })
